@@ -1,0 +1,8 @@
+variable,usable_n,pct,fixable_by_rerun
+curl_direction (primary outcome),177,12.065439672801636,No - authors do not state a baseline
+pre_treatment_hair_stated,608,41.4451261077028,No - genuinely absent from text
+therapy_class (specific),836,56.987048398091346,Partly - remap recovered +41; rest name no agent
+cancer_type (grouped),1121,76.41445126107703,FIXED by normalisation - no re-run needed
+onset_months_post_treatment,222,15.132924335378323,No - timing rarely stated
+treatment_era_year,193,13.156100886162235,No - year rarely stated
+phenotype,1332,90.79754601226993,No - already 91%

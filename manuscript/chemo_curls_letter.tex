@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,booktabs,caption,setspace,titlesec,microtype}
+\usepackage[T1]{fontenc}
+\captionsetup{font=small,labelfont=bf,justification=raggedright,singlelinecheck=false}
+\titleformat{\section}{\normalfont\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\setstretch{1.15}
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries ``Will I Get Chemo Curls?'': What Patients With Cancer Are Saying\\About Their Hair Journey on Social Media}\\[6pt]
+[Author Line], Molly Blue El Alam MPH, Ramez Kouzy MD
+\end{center}
+
+\section*{Introduction}
+``Will I get chemo curls?'' is among the first questions patients post before starting cancer treatment. Over the months and years that follow, they return to describe persistent thinning, altered texture, curl-pattern changes, patchy regrowth, and delayed or incomplete recovery---hair experiences that extend beyond the binary alopecia outcomes typically captured in routine toxicity grading and clinical assessment.\textsuperscript{1-3} Existing evidence describing persistent treatment-related hair changes derives largely from breast cancer cohorts receiving taxane-containing chemotherapy and dermatologist-curated assessments,\textsuperscript{2} while the recent international consensus on persistent chemotherapy-induced alopecia remains focused on chemotherapy and does not provide guidance for hair changes associated with immunotherapy, targeted therapies, antibody-drug conjugates, or radiotherapy.\textsuperscript{3} We analyzed Reddit discussions to characterize how patients describe post-treatment hair changes across contemporary cancer therapies.
+
+\section*{Methods}
+We collected 11\,579 posts from 8618 users across 18 cancer-related and hair-focused Reddit (Advance Publications) communities, as previously described.\textsuperscript{4} The study was exempt from institutional review. A large language model coded every post under a fixed JSON schema with closed vocabularies for phenotype, therapy class, cancer type, curl direction, onset, and valence. Inclusion required a first-person account of a hair change attributed to cancer treatment. Two independently prompted models screened every candidate; only posts both accepted were retained, giving a consensus corpus of 1\,467 posts from 16 communities (2012--2026). Against a blinded 77-post standard adjudicated by a trained human coder, median $\kappa$ was 0.75 across 16 informative labels (mean agreement, 93.5\%). Analyses followed STROBE. Percentages are post-level mention rates, not clinical prevalence.
+
+\section*{Results}
+Among 1\,467 posts, thinning or hair loss was the most frequently mentioned phenotype (659; 44.9\%; 95\% CI, 42.4--47.5), followed by increased curl (203, 13.8\%; 95\% CI, 12.1--15.6), texture change (13.1\%), patchy regrowth (8.9\%), permanent alopecia (4.8\%), and decreased curl (2.2\%) (Table). Distress appeared in 58.2\% of posts, positive framing in 30.4\%.
+
+Curl direction required an author-stated baseline: 41.4\% described pre-treatment hair and 177 stated a direction (137 increased, 28 decreased, 12 unchanged). Decreased curl in previously curly patients inverts the ``chemo curls'' phenotype and is absent from existing terminology.
+
+Patterns varied by therapy class (Figure). Thinning predominated in endocrine-therapy posts (62\% of 128). Patchy regrowth concentrated in radiotherapy posts (19\% of 129), which also had the highest permanent-alopecia rate (14\%). Increased curl was most frequent among CDK4/6-inhibitor (16\% of 37) and immune-checkpoint-inhibitor posts (11\% of 70), agents outside current guidance.\textsuperscript{2,3} No agent was named in 43.0\%. Median stated onset was 2.1 months (IQR, 0.8--5.0). Unsupervised embedding separated regrowth, hair-care, and emotional-narrative clusters (eFigure).
+
+\section*{Discussion}
+Hair change after cancer treatment is undercounted by clinical vocabulary and adverse-event reporting. Patients used terms absent from CTCAE grading---``feathers,'' ``baby hair,'' ``corkscrew,'' ``chemo perm''---yet these are how patients identify their experience.
+
+Hair change is not binary: patients described a spectrum of density, curl, texture, color, and permanence in one narrative, with distress and positive reframing coexisting. Radiotherapy posts carried the highest patchy-regrowth and permanence rates, supporting scalp-sparing planning.\textsuperscript{5}
+
+Two findings bear on corpus construction. Inclusion was the least stable step---the two screens disagreed on membership far more than on any phenotype label---so single-screen corpora likely under-count. And the question patients ask most is the one these data answer least: only 12.1\% state a pre-treatment baseline, because patients describe the hair they have, not the hair they had.
+
+
+Limitations include post-level denominators, selection bias toward young, female, English-speaking users,\textsuperscript{6} unverified self-report, and coding validated against one adjudicator. These conversations are already happening; our role is to listen.
+
+\begin{table}[htbp]
+\centering
+\caption{Distribution of the consensus corpus of 1\,467 Reddit posts describing hair change associated with cancer treatment.}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Attribute & Posts, No. (\%) \\
+\midrule
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Post type}} \\
+\hspace{1em}First-person patient report & 1404 (95.7) \\
+\hspace{1em}Survivor retrospective & 63 (4.3) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Hair phenotype mentioned}} \\
+\hspace{1em}Thinning or hair loss & 659 (44.9) \\
+\hspace{1em}Increased curl & 203 (13.8) \\
+\hspace{1em}Texture change, non-directional & 192 (13.1) \\
+\hspace{1em}Patchy or uneven regrowth & 130 (8.9) \\
+\hspace{1em}Permanent alopecia & 70 (4.8) \\
+\hspace{1em}Colour change & 62 (4.2) \\
+\hspace{1em}Increased thickness & 57 (3.9) \\
+\hspace{1em}Decreased curl & 33 (2.2) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Curl direction vs stated baseline}} \\
+\hspace{1em}Increased curl & 137 (9.3) \\
+\hspace{1em}Decreased curl & 28 (1.9) \\
+\hspace{1em}Explicitly unchanged & 12 (0.8) \\
+\hspace{1em}Baseline not stated & 1290 (87.9) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Therapy class mentioned}} \\
+\hspace{1em}Taxane & 284 (19.4) \\
+\hspace{1em}Alkylator & 311 (21.2) \\
+\hspace{1em}Anthracycline & 277 (18.9) \\
+\hspace{1em}Platinum & 207 (14.1) \\
+\hspace{1em}Vinca alkaloid & 146 (10.0) \\
+\hspace{1em}Endocrine therapy & 128 (8.7) \\
+\hspace{1em}Radiotherapy, brain & 86 (5.9) \\
+\hspace{1em}Immune checkpoint inhibitor & 70 (4.8) \\
+\hspace{1em}Targeted therapy or ADC & 57 (3.9) \\
+\hspace{1em}Radiotherapy, scalp & 45 (3.1) \\
+\hspace{1em}Antimetabolite & 43 (2.9) \\
+\hspace{1em}CDK4/6 inhibitor & 37 (2.5) \\
+\hspace{1em}No specific agent named & 631 (43.0) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Cancer type}} \\
+\hspace{1em}Breast & 533 (36.3) \\
+\hspace{1em}Non-Hodgkin lymphoma & 140 (9.5) \\
+\hspace{1em}Testicular & 114 (7.8) \\
+\hspace{1em}Hodgkin lymphoma & 86 (5.9) \\
+\hspace{1em}Brain or CNS & 71 (4.8) \\
+\hspace{1em}Leukaemia & 61 (4.2) \\
+\hspace{1em}Head and neck & 23 (1.6) \\
+\hspace{1em}Other or not stated & 439 (29.9) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Course at time of posting}} \\
+\hspace{1em}Ongoing & 1000 (68.2) \\
+\hspace{1em}Reported as permanent & 25 (1.7) \\
+\hspace{1em}Partially reverted & 15 (1.0) \\
+\hspace{1em}Reverted to baseline & 18 (1.2) \\
+\hspace{1em}Not stated & 409 (27.9) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Narrative valence}} \\
+\hspace{1em}Distress expressed & 854 (58.2) \\
+\hspace{1em}Positive framing & 446 (30.4) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Temporal detail}} \\
+\hspace{1em}Pre-treatment hair described & 608 (41.4) \\
+\hspace{1em}Onset interval stated & 222 (15.1) \\
+\bottomrule
+\end{tabular}
+\par\vspace{3pt}
+\begin{minipage}{0.92\textwidth}\footnotesize
+Percentages are of the full corpus (N = 1\,467) and represent post-level mention rates, not clinical prevalence. Categories within phenotype, therapy class, and cancer type are not mutually exclusive; a post may mention more than one. Curl direction was coded only where the author stated a pre-treatment baseline.
+\end{minipage}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\textwidth]{{{artifact:art_23e7102f-1885-473e-bfc0-60cc6726d844}}}
+\caption{Hair-phenotype mention rate by therapy class among 1\,467 posts. Rows are therapy classes (denominators shown) and columns are hair phenotypes. Cells show the percentage of posts mentioning each therapy class that also mention each phenotype, shaded on a single scale binned in 5-point increments; color steps are widened at the low end of the range so that differences below 20\% remain distinguishable. Brain and scalp radiotherapy are combined. Posts may mention more than one therapy class or phenotype.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{{{artifact:art_300e6012-0989-428f-937e-83df59bfa3f9}}}
+\caption{eFigure. Two-dimensional UMAP projection of text embeddings for all 1\,467 posts. (A) Six unsupervised clusters with model-generated thematic labels. (B) The same projection overlaid with thinning and increased-curl mentions, showing that curl-focused narratives occupy a distinct region of the embedding space.}
+\end{figure}
+
+\end{document}

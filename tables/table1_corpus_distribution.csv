@@ -1,0 +1,53 @@
+kind,attribute,value
+SEC,Post type,
+ROW,First-person patient report,1404 (95.7)
+ROW,Survivor retrospective,63 (4.3)
+SEC,Hair phenotype mentioned,
+ROW,Thinning or hair loss,659 (44.9)
+ROW,Increased curl,203 (13.8)
+ROW,"Texture change, non-directional",192 (13.1)
+ROW,Patchy or uneven regrowth,130 (8.9)
+ROW,Permanent alopecia,70 (4.8)
+ROW,Colour change,62 (4.2)
+ROW,Increased thickness,57 (3.9)
+ROW,Decreased curl,33 (2.2)
+SEC,Curl direction vs stated baseline,
+ROW,Increased curl,137 (9.3)
+ROW,Decreased curl,28 (1.9)
+ROW,Explicitly unchanged,12 (0.8)
+ROW,Baseline not stated,1290 (87.9)
+SEC,Therapy class mentioned,
+ROW,Taxane,284 (19.4)
+ROW,Alkylator,311 (21.2)
+ROW,Anthracycline,277 (18.9)
+ROW,Platinum,207 (14.1)
+ROW,Vinca alkaloid,146 (10.0)
+ROW,Endocrine therapy,128 (8.7)
+ROW,"Radiotherapy, brain",86 (5.9)
+ROW,Immune checkpoint inhibitor,70 (4.8)
+ROW,Targeted therapy or ADC,57 (3.9)
+ROW,"Radiotherapy, scalp",45 (3.1)
+ROW,Antimetabolite,43 (2.9)
+ROW,CDK4/6 inhibitor,37 (2.5)
+ROW,No specific agent named,631 (43.0)
+SEC,Cancer type,
+ROW,Breast,533 (36.3)
+ROW,Non-Hodgkin lymphoma,140 (9.5)
+ROW,Testicular,114 (7.8)
+ROW,Hodgkin lymphoma,86 (5.9)
+ROW,Brain or CNS,71 (4.8)
+ROW,Leukaemia,61 (4.2)
+ROW,Head and neck,23 (1.6)
+ROW,Other or not stated,439 (29.9)
+SEC,Course at time of posting,
+ROW,Ongoing,1000 (68.2)
+ROW,Reported as permanent,25 (1.7)
+ROW,Partially reverted,15 (1.0)
+ROW,Reverted to baseline,18 (1.2)
+ROW,Not stated,409 (27.9)
+SEC,Narrative valence,
+ROW,Distress expressed,854 (58.2)
+ROW,Positive framing,446 (30.4)
+SEC,Temporal detail,
+ROW,Pre-treatment hair described,608 (41.4)
+ROW,Onset interval stated,222 (15.1)
